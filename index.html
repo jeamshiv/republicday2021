@@ -191,6 +191,11 @@
 			</div>			
 		</div>
 
+
+		<div class="text-center">
+			<img src="https://profile-counter.glitch.me/republicday2021/count.svg" class="img-responsive" alt="Image" style="display: hidden;">
+		</div>
+
 	</footer>
 
 
@@ -206,23 +211,21 @@
 			if(name == ""){alert("Please Type Your Name!");
 			event.preventDefault();}
 
-			
 			by = name.replace(/ /g, '+');
 			
 
 			if($(window).width()> 768){
 
-				var  temp_message = ` ${by} has send you New Year 2021 wishes click on blue text https://jeamshiv.github.io/republicday2021/index.html?by=${by}`;
+					window.location.href=`whatsapp://send?text= ${by} has send you Republic Day message click on blue text https://jeamshiv.github.io/republicday2021/index.html?by=${by}`;
+
+			}
+
+
+			var  temp_message = ` ${by} has send you Republic Day message click on blue text https://jeamshiv.github.io/republicday2021/index.html?by=${by}`;
 				var message = temp_message.replace(/ /g, '%20');
 
 
 			window.location.href=`https://api.whatsapp.com/send?text=${message}`;
-
-
-			}
-
-		
-			window.location.href=`whatsapp://send?text= ${by} has send you New Year 2021 wishes click on blue text https://jeamshiv.github.io/republicday2021/index.html?by=${by}`;
 
 			
 		});
