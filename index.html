@@ -230,7 +230,7 @@
 			if(name == ""){alert("Please Type Your Name!");
 			event.preventDefault();}
 
-			by = name.replace(/ /g, '+');
+			by = name.replaceAll(' ', '+');
 			
 
 			if($(window).width()> 768){
