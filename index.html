@@ -16,7 +16,7 @@
 	<meta property="og:title" content="Replublicday2021 wishes by Jeamshiv" />
 	<meta property="og:type" content="website"/>
 	 <meta property="og:description" content="Replublicday2021 is a webpage create using simple HTML, CSS and JavaScript. You can share this webpage using your name wishes."/>
-	 <meta property="og:image" content="https://avatars0.githubusercontent.com/u/58328919?s=460&u=e45bcc7923212b81aeb84d1515072f7da7b260ee&v=4" />
+	 <meta property="og:image" content="https://jeamshiv.github.io/republicday2021/img/indain-color-heart.png" />
 
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -133,7 +133,7 @@
 		<h1 id="heading_name">Jeamshiv</h1>
 		<h2>Wishing You</h2>
 
-		<img src="img/Happy-republic-day.png" width="50%" class="img-fluid" alt="happy rupblic day by jeamshiv">
+		<img src="img/Happy-republic-day.png" width="50%" class="img-fluid" alt="happy republic day by jeamshiv">
 
 	</div>
 
@@ -241,7 +241,7 @@
 
 
 			var  temp_message = ` ${by} has send you Republic Day message click on blue text https://jeamshiv.github.io/republicday2021/index.html?by=${by}`;
-				var message = temp_message.replace(/ /g, '%20');
+				var message = temp_message.replaceAll(' ', '%20');
 
 
 			window.location.href=`https://api.whatsapp.com/send?text=${message}`;
